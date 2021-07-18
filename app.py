@@ -285,7 +285,7 @@ if dashboard_options == option_1:
   col3.write(format_as_indian(int(abs(sum(death[death.columns[-2]]) - sum(death[death.columns[-1]]) ))))
   col2.subheader("New recoveries")
   col2.write(format_as_indian(int(abs(sum(recovered[recovered.columns[-2]]) - sum(recovered[recovered.columns[-1]]) ))))
-  st.sidebar.write('**Active cases and Recovered cases** for the US are not provided from JHU. [Click here](https://github.com/CSSEGISandData/COVID-19/issues/3464) to read about it.')
+  #st.sidebar.write('**Active cases and Recovered cases** for the US are not provided from JHU. [Click here](https://github.com/CSSEGISandData/COVID-19/issues/3464) to read about it.')
   no_days = st.slider("No. of days", min_value=5, max_value=len(new_cases_global(confirmed)), value=60)
   
   new_cases_data=new_cases_global(confirmed,no_days,"New cases")
